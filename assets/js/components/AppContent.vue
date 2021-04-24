@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import AppNav from './AppNav.vue';
+import AppNav from 'COMPONENTS/AppNav.vue';
 import axios from 'axios';
 import { mapState, mapGetters } from 'vuex';
 

@@ -1979,8 +1979,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_AppSidebar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/AppSidebar.vue */ "./assets/js/components/AppSidebar.vue");
-/* harmony import */ var _components_AppContent_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/AppContent.vue */ "./assets/js/components/AppContent.vue");
+/* harmony import */ var COMPONENTS_AppSidebar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! COMPONENTS/AppSidebar.vue */ "./assets/js/components/AppSidebar.vue");
+/* harmony import */ var COMPONENTS_AppContent_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! COMPONENTS/AppContent.vue */ "./assets/js/components/AppContent.vue");
 //
 //
 //
@@ -1994,8 +1994,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
-    AppSidebar: _components_AppSidebar_vue__WEBPACK_IMPORTED_MODULE_0__.default,
-    AppContent: _components_AppContent_vue__WEBPACK_IMPORTED_MODULE_1__.default
+    AppSidebar: COMPONENTS_AppSidebar_vue__WEBPACK_IMPORTED_MODULE_0__.default,
+    AppContent: COMPONENTS_AppContent_vue__WEBPACK_IMPORTED_MODULE_1__.default
   },
   data: function data() {
     return {};
@@ -2015,7 +2015,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _AppNav_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppNav.vue */ "./assets/js/components/AppNav.vue");
+/* harmony import */ var COMPONENTS_AppNav_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! COMPONENTS/AppNav.vue */ "./assets/js/components/AppNav.vue");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
@@ -2095,7 +2095,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     };
   },
   components: {
-    AppNav: _AppNav_vue__WEBPACK_IMPORTED_MODULE_0__.default
+    AppNav: COMPONENTS_AppNav_vue__WEBPACK_IMPORTED_MODULE_0__.default
   },
   created: function created() {
     this.getNews();
@@ -2206,7 +2206,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _AppNav_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AppNav.vue */ "./assets/js/components/AppNav.vue");
+/* harmony import */ var COMPONENTS_AppNav_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! COMPONENTS/AppNav.vue */ "./assets/js/components/AppNav.vue");
 //
 //
 //
@@ -2258,7 +2258,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   components: {
-    AppNav: _AppNav_vue__WEBPACK_IMPORTED_MODULE_0__.default
+    AppNav: COMPONENTS_AppNav_vue__WEBPACK_IMPORTED_MODULE_0__.default
   },
   mounted: function mounted() {
     document.addEventListener('click', this.onDocumentClick);

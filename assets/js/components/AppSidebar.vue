@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import AppNav from './AppNav.vue';
+import AppNav from 'COMPONENTS/AppNav.vue';
 export default {
   data () {
     return {

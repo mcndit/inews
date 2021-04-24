@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import AppSidebar from './components/AppSidebar.vue';
-import AppContent from './components/AppContent.vue';
+import AppSidebar from 'COMPONENTS/AppSidebar.vue';
+import AppContent from 'COMPONENTS/AppContent.vue';
 
 export default {
   components: {
