@@ -1,3 +1,4 @@
+import axios from 'axios';
 const newsStore = {
     namespaced: true,
     state: {
@@ -90,7 +91,7 @@ const newsStore = {
             }
         ]);
 
-        return;
+        //return;
         let request = {...filters};
         axios.post("/api/news", request)
             .then(response => {

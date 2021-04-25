@@ -8,17 +8,21 @@
       </section>-->
     </header>
     <section class="filters-row" v-if="newsReady">
-      <label for="filter-search" class="search-wrap input-wrap">
+      <label class="search-wrap input-wrap">
         <div class="input-group">
-          <input id="filter-search" class="form-control" placeholder="поиск" v-model="search">
+          <input class="form-control" placeholder="поиск" v-model="search">
           <span class="input-group-btn"><button class="btn btn-default" type="button" @click="onSearch">поиск</button></span>
         </div>
       </label>
-      <label for="filter-date-from" class="input-wrap">
-        <input id="filter-date-from" class="form-control" placeholder="с" v-model="filters.date_from">
+      <label class="input-wrap">
+        <datepicker input-class="form-control" placeholder="с" format="dd.MM.yyyy"
+            calendar-button calendar-button-icon="icon-calendar2"
+            v-model="filters.date_from"></datepicker>
       </label>
-      <label for="filter-date-to" class="input-wrap">
-        <input id="filter-date-to" class="form-control" placeholder="по" v-model="filters.date_to">
+      <label class="input-wrap">
+        <datepicker input-class="form-control" placeholder="по" format="dd.MM.yyyy"
+            calendar-button calendar-button-icon="icon-calendar2"
+            v-model="filters.date_to"></datepicker>
       </label>
     </section>
     <section class="news-results">
@@ -37,8 +41,8 @@
 
 <script>
 import AppNav from 'COMPONENTS/AppNav.vue';
-import axios from 'axios';
 import { mapState, mapGetters } from 'vuex';
+import Datepicker from 'vuejs-datepicker';//https://github.com/edisdev/vue-datepicker-ui
 
 export default {
   data () {
@@ -59,7 +63,8 @@ export default {
     }
   },
   components: {
-    AppNav
+    AppNav,
+    Datepicker
   },
   created() {
     this.getNews();

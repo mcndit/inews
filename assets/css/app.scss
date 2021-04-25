@@ -4,11 +4,11 @@ $primary-color: $color-mirage;
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('/public/fonts/icomoon.eot?jo80qa');
-  src:  url('/public/fonts/icomoon.eot?jo80qa#iefix') format('embedded-opentype'),
-  url('/public/fonts/icomoon.ttf?jo80qa') format('truetype'),
-  url('/public/fonts/icomoon.woff?jo80qa') format('woff'),
-  url('/public/fonts/icomoon.svg?jo80qa#icomoon') format('svg');
+  src:  url('/public/fonts/icomoon.eot?ba2rn');
+  src:  url('/public/fonts/icomoon.eot?ba2rn#iefix') format('embedded-opentype'),
+  url('/public/fonts/icomoon.ttf?ba2rn') format('truetype'),
+  url('/public/fonts/icomoon.woff?ba2rn') format('woff'),
+  url('/public/fonts/icomoon.svg?ba2rn#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,9 @@ $primary-color: $color-mirage;
 }
 .icon-menu-toggle:before {
   content: "\e900";
+}
+.icon-calendar2:before {
+  content: "\e903";
 }
 body {
   min-width: 860px;
@@ -306,6 +309,10 @@ main {
     max-width: 100%;
     flex: 0 0 auto;
     margin-right: 10px;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   .search-wrap {
     width: 50%;
@@ -325,6 +332,12 @@ main {
 }
 .navbar-toggler {
   display: none;
+}
+.vdp-datepicker__clear-button,
+.vdp-datepicker__calendar-button {
+  position: absolute;
+  top: 20%;
+  right: 10px;
 }
 @media (max-width: $mobile-sm) {
   body {
@@ -401,5 +414,13 @@ main {
   }
   .news-results__news-card-content {
     height: 225px;
+  }
+  .filters-row {
+    .input-wrap {
+      width: calc(50% - 5px);
+    }
+    .search-wrap {
+      width: 100%;
+    }
   }
 }
