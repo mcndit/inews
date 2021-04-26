@@ -1,0 +1,2 @@
+talvi@talvi-laptop:~/develop/sites/inews$ npx mix watch
+talvi@talvi-laptop:~/develop/sites/inews$ node server.js или talvi@talvi-laptop:~/develop/sites/inews$ node serve
